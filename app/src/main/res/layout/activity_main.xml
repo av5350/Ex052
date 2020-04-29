@@ -23,6 +23,7 @@
             android:layout_weight="5" />
 
         <WebView
+            android:id="@+id/wV"
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="60" />
@@ -39,7 +40,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/aValue"
                 android:layout_width="0px"
                 android:layout_height="match_parent"
                 android:layout_weight="30"
@@ -52,7 +53,7 @@
                 android:layout_weight="5" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/bValue"
                 android:layout_width="0px"
                 android:layout_height="match_parent"
                 android:layout_weight="30"
@@ -65,7 +66,7 @@
                 android:layout_weight="5" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/cValue"
                 android:layout_width="0px"
                 android:layout_height="match_parent"
                 android:layout_weight="30"
@@ -79,11 +80,12 @@
             android:layout_weight="5" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn"
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="10"
-            android:text="Button" />
+            android:text="Show Quadratic Equation"
+            android:onClick="showGraph"/>
 
         <Space
             android:layout_width="match_parent"
