@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         String cString = cValue.getText().toString();
 
         // if one of the cells is empty
-        if (aString.equals("") || bString.equals("") || cString.equals(""))
+        if (aString.equals("") || bString.equals("") || cString.equals("") || aString.equals("-") || cString.equals("-") || bString.equals("-"))
         {
             Toast.makeText(this, "Enter a number in each cell!", Toast.LENGTH_SHORT).show();
         }
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "a cannot be equal to 0!", Toast.LENGTH_SHORT).show();
         }
         else {
-            wV.loadUrl("https://www.google.com/search?q=" + aString + "x%5E2%2B" + bString + "x%2B" + cString);
+            wV.loadUrl("https://www.google.com/search?q=" + aString + "x%5E2%2B" + bString + "*x%2B" + cString);
         }
     }
 
