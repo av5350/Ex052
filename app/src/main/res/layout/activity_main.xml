@@ -45,7 +45,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="30"
                 android:ems="10"
-                android:inputType="numberDecimal|numberSigned" />
+                android:inputType="numberDecimal|numberSigned"
+                android:hint="a"
+                android:gravity="center"
+                android:textColorHint="#2F4F4F"/>
 
             <Space
                 android:layout_width="0px"
@@ -58,7 +61,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="30"
                 android:ems="10"
-                android:inputType="numberDecimal|numberSigned" />
+                android:inputType="numberDecimal|numberSigned"
+                android:hint="b"
+                android:gravity="center"
+                android:textColorHint="#2F4F4F"/>
 
             <Space
                 android:layout_width="0px"
@@ -71,7 +77,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="30"
                 android:ems="10"
-                android:inputType="numberDecimal|numberSigned" />
+                android:inputType="numberDecimal|numberSigned"
+                android:hint="c"
+                android:gravity="center"
+                android:textColorHint="#2F4F4F"/>
         </LinearLayout>
 
         <Space
@@ -79,13 +88,33 @@
             android:layout_height="0px"
             android:layout_weight="5" />
 
-        <Button
-            android:id="@+id/btn"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="10"
-            android:text="Show Quadratic Equation"
-            android:onClick="showGraph"/>
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGraph"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="45"
+                android:onClick="showGraph"
+                android:text="Show graph" />
+
+            <Space
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="10" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="45"
+                android:text="clear"
+                android:onClick="clear"/>
+        </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
