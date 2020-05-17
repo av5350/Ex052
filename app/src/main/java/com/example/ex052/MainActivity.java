@@ -11,12 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    EditText aValue;
-    EditText bValue;
-    EditText cValue;
-
-    Button btnGraph;
-    Button btnClear;
+    EditText aValue, bValue, cValue;
 
     WebView wV;
 
@@ -28,9 +23,6 @@ public class MainActivity extends AppCompatActivity {
         aValue = (EditText)findViewById(R.id.aValue);
         bValue = (EditText)findViewById(R.id.bValue);
         cValue = (EditText)findViewById(R.id.cValue);
-
-        btnGraph = (Button)findViewById(R.id.btnGraph);
-        btnClear = (Button)findViewById(R.id.btnClear);
 
         wV = (WebView)findViewById(R.id.wV);
 

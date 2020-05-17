@@ -95,7 +95,6 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnGraph"
                 android:layout_width="0px"
                 android:layout_height="match_parent"
                 android:layout_weight="45"
@@ -108,12 +107,11 @@
                 android:layout_weight="10" />
 
             <Button
-                android:id="@+id/btnClear"
                 android:layout_width="0px"
                 android:layout_height="match_parent"
                 android:layout_weight="45"
-                android:text="clear"
-                android:onClick="clear"/>
+                android:onClick="clear"
+                android:text="clear" />
         </LinearLayout>
 
         <Space
