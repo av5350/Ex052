@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         wV.loadUrl("https://media.tenor.com/images/bdc934496f843d4863a960ca3ffd355f/tenor.gif");
     }
-
+    //a
     private class MyWebViewClient extends WebViewClient {
         public boolean shouldOverideUrlLoading(WebView view, String url) {
             view.loadUrl(url);
